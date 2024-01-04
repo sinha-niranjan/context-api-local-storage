@@ -24,7 +24,7 @@ const App = () => {
     setTodos((prev) =>
       prev.map((prevTodo) =>
         prevTodo.id === id
-          ? { ...prev, completed: !prevTodo.completed }
+          ? { ...prevTodo, completed: !prevTodo.completed }
           : prevTodo
       )
     );
